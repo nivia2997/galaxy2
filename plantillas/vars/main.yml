@@ -1,0 +1,5 @@
+---
+# vars file for plantillas
+hostname: ansible
+time.date: 26 de septiembre  
+system_manager: nivia

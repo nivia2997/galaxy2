@@ -1,0 +1,7 @@
+---
+# handlers file for Docker
+- name: Enable Docker CE service at startup
+  service:
+     name: docker
+     state: started
+     enabled: yes

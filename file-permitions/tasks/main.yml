@@ -1,0 +1,7 @@
+---
+# tasks file for file-permitions
+- name: Touch the same file, but add/remove some permissions
+  file:
+     path: /home/nivia/directori1/documento
+     state: touch
+     mode: g-wx,o-rw

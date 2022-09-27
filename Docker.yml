@@ -1,0 +1,7 @@
+---
+- name: intalacion de docker
+  hosts: redhat
+  become: yes
+  roles: 
+     - Docker
+     

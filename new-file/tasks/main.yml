@@ -1,0 +1,7 @@
+---
+# tasks file for new-file
+- name: nuevo file con full permisos
+  file:
+    path: /home/nivia/Dprueba/unfilemas
+    state: touch
+    mode: u=rwx,g=rwx,o=rwx

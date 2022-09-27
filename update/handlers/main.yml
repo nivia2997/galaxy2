@@ -1,0 +1,7 @@
+---
+# handlers file for update
+- name: update
+  yum:
+    name: "*"
+    state: latest
+    update_only: yes

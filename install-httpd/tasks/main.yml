@@ -1,0 +1,17 @@
+---
+# tasks file for install-httpd
+- name: "{{ install_server }}"
+  yum:
+    name: httpd
+    state: latest
+
+- name: "{{ web_server }}"
+  service:
+    name: httpd
+    enabled: yes
+
+- name: modify home page
+  shell: "{{ echo }}" 
+  
+  notify:
+      - iniciar apache

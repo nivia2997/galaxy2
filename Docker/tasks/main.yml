@@ -1,0 +1,28 @@
+---
+# tasks file for Docker
+#- name: "{{ yum_installed }}"
+# yum:
+#   name: "{{ packages }}"
+#   state: latest
+#   update_cache: yes
+
+- name: "{{ add_repository }}"
+  shell: yum-config-manager --enable extras
+
+- name: "{{ install_docker }}"
+  shell: "amazon-linux-extras install docker=18.06.1 -y"
+
+  notify:
+     - Enable Docker CE service at startup
+
+- name: "{{ ensure_python }}"
+  pip:
+    name: "{{ packages }}"
+   
+- name: Crear un contenedor
+  docker_container: # HERE the module
+    name: contenedor33
+    image: niviaucandemike2997/centos-7-web:1
+    state: started
+    ports:
+       - "80:80"

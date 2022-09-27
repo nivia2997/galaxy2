@@ -1,0 +1,5 @@
+---
+# tasks file for saludos
+- name: Ansible saludos.
+  debug:
+    msg: "{{ salutations }}"

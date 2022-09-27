@@ -1,0 +1,6 @@
+---
+# vars file for install-httpd
+instal_server: instalar servidor web
+web_server: habilitar servidor
+directory_http: /etc/httpd
+echo: 'echo "ojitos lindos" >> /var/www/html/index.html'

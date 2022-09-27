@@ -1,0 +1,7 @@
+---
+# defaults file for Docker
+#name_update: Actualizar todos los paquetes
+yum_installed: asegúrese de que haya una lista de paquetes yum instalados
+
+name_version: Desinstalar versiones antiguas
+name_repository: configurar el repositorio docker

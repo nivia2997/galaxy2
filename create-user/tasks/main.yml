@@ -1,0 +1,7 @@
+---
+# tasks file for create-user
+- name: create user on remote host
+  ansible.builtin.user:
+    name: naty
+    shell: /bin/bash
+    group: wheel

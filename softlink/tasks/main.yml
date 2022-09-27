@@ -1,0 +1,7 @@
+---
+# tasks file for softlink
+- name: Crear un soft link
+  ansible.builtin.file:
+    src: "{{ mioriginal }}"
+    dest: "{{ micopia }}"
+    state: link

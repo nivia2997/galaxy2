@@ -1,0 +1,8 @@
+Bienvenido a {{ hostname }}
+
+Este archivo fue creado el día {{ time.date }}
+
+Espero todo se encuentre en el orden deseado y en caso 
+de no ser así,
+Póngase en contacto con {{ system_manager }} 
+Gracias!!

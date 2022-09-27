@@ -1,0 +1,6 @@
+---
+# tasks file for file
+- name: copy files
+  copy:    
+    src: /home/nivia/galaxy2/file/files/caritafeliz
+    dest: /home/nivia/

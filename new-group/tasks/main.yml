@@ -1,0 +1,6 @@
+---
+# tasks file for new-group
+- name: create group
+  ansible.builtin.group:
+    name: "{{ mygroup }}" 
+    state: present

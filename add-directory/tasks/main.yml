@@ -1,0 +1,6 @@
+---
+# tasks file for add-directory
+- name: remove directory
+  file:
+    path: /home/nivia/directori33
+    state: absent

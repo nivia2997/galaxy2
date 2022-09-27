@@ -1,0 +1,6 @@
+---
+- name:
+  hosts: redhat
+  become: yes
+  roles:
+     - add-user

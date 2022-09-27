@@ -1,0 +1,8 @@
+---
+# tasks file for new-directory
+- name: create new directory
+  file:
+    path: /home/nivia/feliiizz
+    state: directory
+    mode:  u=rwx,g=rwx,o=rwx
+    file: path={{ doc_new }} state=directory owner=nivia group=nivia 

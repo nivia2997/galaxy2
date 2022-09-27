@@ -1,0 +1,7 @@
+server "{
+        listen 80;
+        listen [::]:80;
+        root "{{ directory_docker }}";
+        index index.html;
+        location /
+       }"

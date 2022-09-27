@@ -1,0 +1,8 @@
+---
+# tasks file for cronjob
+- name: Ensure a job that runs at 2 and 5 exists. Creates an entry like "0 5,2 * * ls -alh > /dev/null"
+  ansible.builtin.cron:
+    name: "create a file"
+    minute: "32"
+    hour: "9,*" 
+    job: "touch /home/nivia/mitext > /dev/null"

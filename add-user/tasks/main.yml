@@ -1,0 +1,6 @@
+---
+# tasks file for add-user
+- name: Add the user {{ username }}
+  ansible.builtin.user:
+    name: "{{ username }}"
+    state: present

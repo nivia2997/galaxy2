@@ -1,0 +1,6 @@
+---
+# tasks file for file-demo
+- name: write to file
+  ansible.builtin.copy:
+    content: "{{ fruit }}"
+    dest: "{{ output }}"

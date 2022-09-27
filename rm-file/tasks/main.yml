@@ -1,0 +1,6 @@
+---
+# tasks file for rm-file
+- name: eliminar file
+  ansible.builtin.file:
+    path: "{{ mypath }}"
+    state: "absent"

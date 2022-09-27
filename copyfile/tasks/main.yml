@@ -1,0 +1,7 @@
+---
+# tasks file for copyfile
+- name: Copiar un file de un esclavo y se pega en el mismo esclavo
+  copy:
+    src: /home/nivia/textos2
+    dest: /home/nivia/textos3
+    remote_src: yes

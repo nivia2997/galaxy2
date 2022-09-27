@@ -1,0 +1,7 @@
+---
+- name:
+  hosts: redhat
+  become: yes
+  roles:
+     - file-con_wor
+

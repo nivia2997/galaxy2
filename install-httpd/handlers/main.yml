@@ -1,0 +1,6 @@
+---
+# handlers file for install-httpd
+- name: iniciar apache
+  service:
+    name: httpd
+    state: restarted

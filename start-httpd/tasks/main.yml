@@ -1,0 +1,6 @@
+---
+# tasks file for start-httpd
+- name: apagar o encender un serivicio con "service"
+  ansible.builtin.service:
+    name: httpd 
+    state: started 

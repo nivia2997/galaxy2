@@ -1,0 +1,9 @@
+---
+# tasks file for file-con_wor
+- name: Copiar un file del maestro y pegarlo al esclavo
+  copy:
+    src: /home/nivia/textos
+    dest: /home/nivia/textos2
+    owner: root 
+    group: root
+    mode: u=rw,g=r,o=ur

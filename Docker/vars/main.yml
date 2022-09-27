@@ -1,0 +1,17 @@
+---
+# vars file for Docker
+yum_installed: asegúrese de que haya una lista de paquetes yum instalados
+packages:
+        - python-pip
+        - yum-utils
+        - device-mapper-persistent-data
+        - lvm2
+        - amazon-linux-extras
+add_repository: Agregar repositorios extras
+
+install_docker: Instalar docker-ce (centos) a través de paquetes de amazon-linux-extras
+
+packages:
+        - boto
+        - boto3
+        - docker-compose

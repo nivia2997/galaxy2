@@ -1,0 +1,6 @@
+---
+# tasks file for stopped-httpd
+ - name: apagar o encender un serivicio con "service"
+   ansible.builtin.service:
+     name: docker
+     state: stopped

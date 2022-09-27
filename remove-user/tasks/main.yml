@@ -1,0 +1,7 @@
+---
+# tasks file for remove-user
+- name: remove user
+  ansible.builtin.user:
+    name: naty
+    state: absent
+    remove: yes
